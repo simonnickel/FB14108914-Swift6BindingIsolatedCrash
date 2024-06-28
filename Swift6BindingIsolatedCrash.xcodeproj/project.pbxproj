@@ -14,7 +14,6 @@
 		5AF4C9CA2C2EAE340021B93F /* Swift6BindingIsolatedCrashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF4C9C92C2EAE340021B93F /* Swift6BindingIsolatedCrashTests.swift */; };
 		5AF4C9D42C2EAE340021B93F /* Swift6BindingIsolatedCrashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF4C9D32C2EAE340021B93F /* Swift6BindingIsolatedCrashUITests.swift */; };
 		5AF4C9D62C2EAE340021B93F /* Swift6BindingIsolatedCrashUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF4C9D52C2EAE340021B93F /* Swift6BindingIsolatedCrashUITestsLaunchTests.swift */; };
-		5AF4C9E32C2EB1D70021B93F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5AF4C9E22C2EB1D10021B93F /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +45,7 @@
 		5AF4C9CF2C2EAE340021B93F /* Swift6BindingIsolatedCrashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Swift6BindingIsolatedCrashUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AF4C9D32C2EAE340021B93F /* Swift6BindingIsolatedCrashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift6BindingIsolatedCrashUITests.swift; sourceTree = "<group>"; };
 		5AF4C9D52C2EAE340021B93F /* Swift6BindingIsolatedCrashUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift6BindingIsolatedCrashUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		5AF4C9E22C2EB1D10021B93F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		5AF4C9E42C2EB5970021B93F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +76,7 @@
 		5AF4C9AB2C2EAE320021B93F = {
 			isa = PBXGroup;
 			children = (
+				5AF4C9E42C2EB5970021B93F /* README.md */,
 				5AF4C9B62C2EAE320021B93F /* Swift6BindingIsolatedCrash */,
 				5AF4C9C82C2EAE340021B93F /* Swift6BindingIsolatedCrashTests */,
 				5AF4C9D22C2EAE340021B93F /* Swift6BindingIsolatedCrashUITests */,
@@ -97,7 +97,6 @@
 		5AF4C9B62C2EAE320021B93F /* Swift6BindingIsolatedCrash */ = {
 			isa = PBXGroup;
 			children = (
-				5AF4C9E22C2EB1D10021B93F /* README.md */,
 				5AF4C9B72C2EAE320021B93F /* Swift6BindingIsolatedCrashApp.swift */,
 				5AF4C9B92C2EAE320021B93F /* ContentView.swift */,
 				5AF4C9BB2C2EAE340021B93F /* Assets.xcassets */,
@@ -236,7 +235,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5AF4C9E32C2EB1D70021B93F /* README.md in Resources */,
 				5AF4C9C02C2EAE340021B93F /* Preview Assets.xcassets in Resources */,
 				5AF4C9BC2C2EAE340021B93F /* Assets.xcassets in Resources */,
 			);
