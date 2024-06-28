@@ -8,15 +8,32 @@
 import SwiftUI
 
 struct ContentView: View {
+	
+	private let bindingProvider = BindingProvider()
+	
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+			Toggle(isOn: bindingProvider.binding) {
+				Text("Toggle to Binding")
+			}
         }
         .padding()
     }
+}
+
+@MainActor
+class BindingProvider {
+	
+	private var value: Bool = false
+	
+	var binding: Binding<Bool> {
+		Binding<Bool> { @MainActor in
+			self.value
+		} set: { value, transaction in
+			self.value = value
+		}
+	}
+	
 }
 
 #Preview {
