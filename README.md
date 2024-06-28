@@ -13,12 +13,19 @@ To be compliant with Swift 6 strict concurrency checking, the class and the clos
 When compiling with Swift 5.10 and strict concurrency checking = complete, there are no warnings and the binding is working fine.
 When compiling with Swift 6, the code fails to compile without proper error message (see file: Build Swift6BindingIsolatedCrash_2024-06-28T10-51-08.txt).
 
-In the actual project I encountered this issue, it was able to build, but the app crashed on initialisation of the binding. In this case, the binding is defined in a package with swiftLanguageVersions: [.version("6")] set and the consuming project set to compile with Swift 6.
+~~In the actual project I encountered this issue, it was able to build, but the app crashed on initialisation of the binding. In this case, the binding is defined in a package with swiftLanguageVersions: [.version("6")] set and the consuming project set to compile with Swift 6.~~
+
+Update: When the class is defined using Generics, the code compiles but crashes when the Binding is created.
 
 	
 ## Example code
 
-The example shows a Toggle, which uses a binding setup as described above. When compiled with Swift 5, it works fine. When compiled with Swift 6 it fails.
+The example shows a Toggle, which uses a binding setup as described above. 
+
+There are 2 implementations of the BindingProvider:
+
+1. Without Generics: When compiled with Swift 5, it works fine. When compiled with Swift 6 it fails.
+2. With Generics: Compiles with Swift 5 and 6, but crashes with Swift 6. 
 
 
 ## Tested on
